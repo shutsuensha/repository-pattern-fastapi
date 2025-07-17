@@ -1,0 +1,10 @@
+ruff
+mypy
+pytest
+pytest-cov
+pre-commit
+bandit
+safety
+pip-audit
+mkdocs
+mkdocs-material

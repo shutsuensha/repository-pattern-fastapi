@@ -1,0 +1,29 @@
+[project]
+name = "repository-pattern-fastapi"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = []
+
+[tool.ruff]
+line-length = 88
+target-version = "py312"
+src = ["app", "tests"] 
+exclude = ["migrations", "__pycache__"]
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+
+[tool.ruff.lint]
+select = ["E", "F", "B", "I", "UP", "PL", "C", "Q", "T", "S"]
+ignore = ["E501", "B008"]
+
+[tool.mypy]
+python_version = "3.12"
+strict = true
+exclude = ["migrations", "tests"]
+
+[tool.pytest.ini_options]
+addopts = "--asyncio-mode=auto -v --tb=short"
+testpaths = ["tests"]
+filterwarnings = ["ignore::DeprecationWarning"]

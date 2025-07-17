@@ -1,0 +1,10 @@
+site_name: FastAPI Docs
+theme:
+  name: material
+
+nav:
+  - Введение: index.md
+  - Установка: setup.md
+  - API: api.md
+
+docs_dir: docs
